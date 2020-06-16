@@ -1,0 +1,10 @@
+<%= form_tag('/admin/preferences/artist/change', method: :patch )  do %>
+ <%= label_tag :allow_create_artist %>
+ <%= hidden_field_tag "change_artist", "true" %>
+ <%= submit_tag "Change" %> - <%= @pref.allow_create_artists %>
+<% end %>
+<%= form_tag('/admin/preferences/song/change' , method: :patch) do %>
+ <%= label_tag :allow_create_song %>
+ <%= hidden_field_tag "change_song", "true" %>
+ <%= submit_tag "Change" %> - <%= @pref.allow_create_songs %>
+<% end %>
