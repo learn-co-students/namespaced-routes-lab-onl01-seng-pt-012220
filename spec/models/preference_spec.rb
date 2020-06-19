@@ -7,3 +7,4 @@ RSpec.describe Preference, type: :model do
     expect(p.allow_create_songs).to eq true
   end
 end
+ 
